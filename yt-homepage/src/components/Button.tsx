@@ -5,8 +5,13 @@ import { twMerge } from "tailwind-merge";
 const buttonStyles = cva(["transition-colors"], {
   variants: {
     variant: {
-      default: ["bg-secondary", "hover:bg-secondary-hover"],
+      default: ["bg-gray-200", "hover:bg-gray-300"], // Changed to grey background
       ghost: ["hover:bg-gray-100"],
+      dark: [
+        "bg-secondary-dark",
+        "hover:bg-secondary-dark-hover",
+        "text-secondary",
+      ],
     },
     size: {
       default: ["rounded", "p-2"],
@@ -20,10 +25,10 @@ const buttonStyles = cva(["transition-colors"], {
         "p-2.5",
       ],
     },
-    defaultVariants: {
-      variant: "default",
-      size: "default",
-    },
+  },
+  defaultVariants: {
+    variant: "default",
+    size: "default",
   },
 });
 
