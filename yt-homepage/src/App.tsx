@@ -3,6 +3,7 @@ import { CategoryPills } from "./components/CategoryPills";
 import { categories } from "./data/home";
 import { useState } from "react";
 function App() {
+  //!ko klikneš na gumb se pokaže črna barva gumba! t
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
   return (
     <>
@@ -16,7 +17,9 @@ function App() {
               selectedCategory={selectedCategory}
               onSelect={setSelectedCategory}
             />
-            <div className="flex-grow"></div>
+            <div className="grid gap-4 grid-cols[repeat(auto-fill,minmax(300px,1fr))]">
+              <VideoGridItem />
+            </div>
           </div>
         </div>
       </div>
@@ -25,3 +28,5 @@ function App() {
 }
 
 export default App;
+
+//!propse damo v app ker bodo te propse rabla cela aplikacija in se od tam naprej passajo

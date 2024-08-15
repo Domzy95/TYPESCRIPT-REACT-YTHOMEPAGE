@@ -9,6 +9,22 @@ export const categories = [
   "HTML",
   "TypeScript",
   "Node.js",
+  "Git",
+  "GitHub",
+  "Jest",
+  "Cypress",
+  "Prettier",
+  "ESLint",
+  "Jira",
+  "Azure",
+  "Docker",
+  "AWS",
+  "SASS",
+  "Styled Components",
+  "Material UI",
+  "Bootstrap",
+  "Vercel",
+  "Netlify",
 ];
 
 //!NAREDILI SMO TA FAIL KI GA POTEM IMPORTAMO V APP.TSC
